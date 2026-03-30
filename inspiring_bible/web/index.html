@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiring Bible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app" aria-hidden="true">
+        <div class="ambient ambient-left"></div>
+        <div class="ambient ambient-right"></div>
+
+        <main class="bible-shell" role="dialog" aria-modal="true" aria-labelledby="ui-title">
+            <section class="bible-panel bible-panel--intro">
+                <div class="halo"></div>
+
+                <p class="eyebrow">Sacred Reading</p>
+                <h1 id="ui-title" class="ui-title">Holy Bible</h1>
+                <p id="ui-subtitle" class="ui-subtitle">Thirty verses for peace, courage, rest, and hope.</p>
+
+                <div class="intro-divider"></div>
+
+                <div class="theme-stack">
+                    <div class="theme-card">
+                        <span class="theme-label">Theme</span>
+                        <strong id="theme-name">Peace</strong>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-label">Translation</span>
+                        <strong id="translation-name">KJV</strong>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-label">Verse</span>
+                        <strong id="verse-counter">1 / 30</strong>
+                    </div>
+                </div>
+
+                <div class="blessing-card">
+                    <p class="blessing-title">Reading Focus</p>
+                    <p id="verse-title" class="blessing-text">Stillness</p>
+                </div>
+
+                <div class="footer-note">
+                    <span class="footer-note__line"></span>
+                    <p id="ui-footer">Be still, and know that I am God.</p>
+                </div>
+            </section>
+
+            <section class="bible-panel bible-panel--verse">
+                <div class="verse-frame" id="verse-frame">
+                    <div class="verse-meta">
+                        <p class="verse-kicker">Most Inspiring Verses</p>
+                        <h2 id="verse-reference" class="verse-reference">Psalm 46:10</h2>
+                    </div>
+
+                    <article class="verse-scroll">
+                        <p id="verse-text" class="verse-text">Be still, and know that I am God.</p>
+                    </article>
+                </div>
+
+                <div class="controls">
+                    <button id="prev-btn" class="control control--ghost" type="button">Previous</button>
+                    <button id="shuffle-btn" class="control control--glow" type="button">Another Verse</button>
+                    <button id="next-btn" class="control control--ghost" type="button">Next</button>
+                </div>
+
+                <div class="helper-row">
+                    <p>Use the buttons or your arrow keys to browse.</p>
+                    <button id="close-btn" class="close-link" type="button">Close</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
