@@ -1,5 +1,7 @@
 # inspiring_bible
 
+Preview: https://www.youtube.com/watch?v=pIgK2UT-Uho
+
 A standalone FiveM resource with a custom Bible NUI for QBCore, `ox_inventory`, and `ox_target`.
 
 ## Features
